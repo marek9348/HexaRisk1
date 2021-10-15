@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-color: darkslategrey;
+    
+    
+}
+
+
+#canvas{
+    
+    border-left: 2px solid gold;
+    border-right: 2px solid gold;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: block;
+    background-color: black;
+    z-index: 0;
+
+    
+    
+    
+}
+#canvas-towns{
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: block;
+    background-color: transparent;
+    z-index: 100;
+}
+#upperCanvas{
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    display: block;
+    border-left: 2px solid gold;
+    border-right: 2px solid gold;
+    border-top: 2px solid gold;
+    background-color: darkcyan;
+}
+#lowerCanvas{
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    display: block;
+    border-left: 2px solid gold;
+    border-right: 2px solid gold;
+    border-bottom: 2px solid gold;
+    background-color: darkcyan;
+}
+#descript{
+    margin-left: 200px;
+    margin-bottom: 20px;
+}
