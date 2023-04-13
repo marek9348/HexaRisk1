@@ -190,7 +190,13 @@ canvas.addEventListener('mousedown', function(event){
         else{
             getClicked(mouse.x, mouse.y, tiles);
             getNeigbHglts();    
-            hglTiles = setPassables();    
+            hglTiles = setPassables();  
+            //Get the neigbhs of the tile
+
+            //console.log("Start tile id: " + tiles[41].id + " ngb id " + tiles[41].neighbours[5].id + ' Neigbhors typ: ' + tiles[43].neighbours[5].type
+            //+ "ngb subtype: " + tiles[41].neighbours[5].subtype + ' Ngb neigbhors subtype: ' + tiles[41].neighbours[5].neighbours[0].subtype);
+            //hglTiles = setFirstNeigbhors();
+            //getSecondCircle();  
             //console.log('Hgl tiles length: ' + hglTiles.length);
             //updateHighlighted();
             //console.log(event);
@@ -293,6 +299,22 @@ function getClicked(mx, my, tiles){
         }
     }
 }
+
+//Find second circle of neigbhors
+function getSecondCircle(){
+    let result = hglTiles;
+    //Loop all except first one -> start tile
+    for(i = 1; i < hglTiles.length-1; i++){
+        console.log(hglTiles[i].neighbours.length + " ");
+    }
+
+}
+
+//Set negbhord for 1. circle ngbs
+function setFirstNeigbhors(){
+    
+}
+
 //Check if the clicked tile can be considered as clicked
 function isClickable(){
     let result = false;
